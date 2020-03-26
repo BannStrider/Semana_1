@@ -29,3 +29,8 @@
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-call-methods/
 
 > Commit: https://github.com/BannStrider/Semana_1/commit/b3247fc5f2ea8e293959c07404842039d5d0c3d3
+
+### **Cómo agregar la lógica de decisión al código mediante la instrucción “if-elseif-else” en C#**
+> Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-if-elseif-else/
+
+> Commit: https://github.com/BannStrider/Semana_1/commit/c9be8dbd77e588acb58bdc9df68b296bb2d617a3
