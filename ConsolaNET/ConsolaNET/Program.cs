@@ -6,32 +6,26 @@ namespace ConsolaNET
     {
         static void Main(string[] args)
         {
-            //Primeros pasos
-            Console.WriteLine("¡Hola Mundo!");
-
             //Desafio
-            Console.WriteLine("Esta es la primera linea.");
-            Console.Write("Esta");
-            Console.Write(" ");
-            Console.Write("es");
-            Console.Write(" ");
-            Console.Write("la");
-            Console.Write(" ");
-            Console.Write("segunda");
-            Console.Write(" ");
-            Console.Write("linea.");
+            String nombre = "Bob";
+            int numero = 3;
+            decimal temperatura = 34.4m;
+
+            Console.Write("¡Hola, " + nombre + "! ");
+            Console.Write("Tienes " + numero + " mensajes en tu buzón. ");
+            Console.Write("La temperatura actual es de " + temperatura + " celsius.");
 
             /**
              * Test
              * 
-             * 1. ¿Cuál es el principal trabajo del compilador?
-             * El compilador principalmente convierte el código a un formato ejecutable que el equipo pueda entender.
+             * 1. ¿Cuáles de los siguientes nombres de variable se deben evitar?
+             * $DATA
              * 
-             * 2. ¿Cuál de las siguientes afirmaciones sobre C# es verdadera?
-             * Hay que usar comillas dobles para crear una cadena literal.
+             * 2. Cuál es el problema de esta línea de código: var message;
+             * Uso de la palabra clave var sin inicializar la variable
              * 
-             * 3. ¿Qué problema hay en esta línea de código? Console.WriteLine("What is wrong with me?")
-             * Falta un punto y coma al final.
+             * 3. Cuál de las siguientes líneas de código crea una variable correctamente.
+             * decimal x = 12.3m;
              * 
              */
         }
