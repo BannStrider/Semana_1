@@ -3,7 +3,8 @@
 ### **1.- Escritura de código de C# por primera vez**
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-write-first/
 
-> Commit: https://github.com/BannStrider/Semana_1/commit/e1c8cddfb7b1c216c6d07ea60dd5e27323aef79b
+> Commit 1: https://github.com/BannStrider/Semana_1/commit/73d2de447d52b181a8259517bb4992081d24a78a
+> Commit 2: https://github.com/BannStrider/Semana_1/commit/e1c8cddfb7b1c216c6d07ea60dd5e27323aef79b
 
 
 ### **2.- Almacenamiento y recuperación de datos mediante valores literales y de variable en C#**
