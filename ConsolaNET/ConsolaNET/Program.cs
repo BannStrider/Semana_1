@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsolaNET
 {
@@ -8,41 +9,18 @@ namespace ConsolaNET
         {
             //Desafio
                 //Declaramos variables
-                int contador = 0;
-                string mensaje_original = "El rápido zorro marrón salta por encima del perro perezoso";
-                string mensaje_reverso;
-                char[] mensaje_cadena = mensaje_original.ToCharArray();
+                var numeros_fibonacci = new List<int> {1,1};
 
-                //Hacemos que el mensaje nuevo se le haga un reverso
-                Array.Reverse(mensaje_cadena);
-                mensaje_reverso = new String(mensaje_cadena);
+                while (numeros_fibonacci.Count < 20){
+                    var fila_anterior = numeros_fibonacci[numeros_fibonacci.Count - 1];
+                    var fila_anterior_2 = numeros_fibonacci[numeros_fibonacci.Count - 2];
 
-                //Contamos las veces que aparece la letra
-                foreach (char letra in mensaje_cadena)
-                {
-                    if (letra == 'o')
-                    {
-                        contador++;
-                    }
+                    numeros_fibonacci.Add(fila_anterior + fila_anterior_2);
                 }
 
-                Console.WriteLine("Mensaje original: " + mensaje_original);
-                Console.WriteLine("Mensaje reverso: " + mensaje_reverso);
-                Console.WriteLine($"La letra 'o' aparece {contador} veces.");
-
-            /**
-             * Test
-             * 
-             * 1. ¿Cuál de los siguientes nombres de variable es un buen nombre de variable?
-             * initialMessage
-             * 
-             * 2. ¿Cuál de las siguientes es una mala razón para usar un comentario de código?
-             * Quiere explicar cómo funciona una nueva palabra clave de C#.
-             * 
-             * 3. ¿Cuál de las siguientes afirmaciones sobre los espacios en blanco es verdadera?
-             * Debe agregar espacios en blanco prudentemente para mejorar la legibilidad del código.
-             * 
-             */
+                foreach (var item in numeros_fibonacci){
+                    Console.WriteLine(item);
+                }
         }
     }
 }
