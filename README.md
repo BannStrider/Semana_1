@@ -35,3 +35,8 @@
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-if-elseif-else/
 
 > Commit: https://github.com/BannStrider/Semana_1/commit/c9be8dbd77e588acb58bdc9df68b296bb2d617a3
+
+### **7.- Almacenamiento e iteración de secuencias de datos mediante el uso de matrices y de la instrucción “foreach” en C#**
+> Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-arrays/
+
+> Commit: https://github.com/BannStrider/Semana_1/commit/a26082240612b614004e343624beb8aab60eb9db
