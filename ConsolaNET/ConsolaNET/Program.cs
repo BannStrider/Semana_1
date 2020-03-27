@@ -7,45 +7,27 @@ namespace ConsolaNET
         static void Main(string[] args)
         {
             //Desafio
-            Random random = new Random();
-            int diasRestantes = random.Next(12);
-            int porcentajeDescuento = 0;
+            string[] matriz_id = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
 
-            if (diasRestantes == 0)
+            foreach (string id in matriz_id)
             {
-                Console.WriteLine("Tu suscripción ha caducado.");
-            }
-            else if (diasRestantes == 1)
-            {
-                Console.WriteLine("Tu suscripción caduca en horas.");
-                porcentajeDescuento = 20;
-            }
-            else if (diasRestantes <= 5)
-            {
-                Console.WriteLine($"Tu suscripción caduca en {diasRestantes} días.");
-                porcentajeDescuento = 10;
-            }
-            else if (diasRestantes <= 10)
-            {
-                Console.WriteLine("Tu suscripción caduca pronto. ¡Renuevala ahora!");
-            }
-
-            if (porcentajeDescuento > 0)
-            {
-                Console.WriteLine($"¡Renueva ahora y ahorra {porcentajeDescuento}%!");
+                if (id.StartsWith("B"))
+                {
+                    Console.WriteLine(id);
+                }
             }
 
             /**
              * Test
              * 
-             * 1. Si int x = 5;, ¿cuál de las siguientes expresiones booleana es válida y se evalúa como verdadera?
-             * x == 5
+             * 1. ¿Cómo se accede al tercer elemento de una matriz?
+             * myArray[2]
              * 
-             * 2. ¿Cuál de las siguientes opciones no es un operador válido?
-             * %%
+             * 2. ¿Cuál de las siguientes respuestas es la forma correcta de crear una nueva matriz de números enteros con tres elementos?
+             * int[] myArray = new int[3];
              * 
-             * 3. ¿Cuál de las siguientes opciones sobre la instrucción if es falsa?
-             * Puede agregar else antes de una instrucción else if.
+             * 3. ¿Cuál de las siguientes instrucciones foreach es la correcta?
+             * foreach (int value in values)
              * 
              */
         }
