@@ -7,27 +7,40 @@ namespace ConsolaNET
         static void Main(string[] args)
         {
             //Desafio
-            string[] matriz_id = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+                //Declaramos variables
+                int contador = 0;
+                string mensaje_original = "El rápido zorro marrón salta por encima del perro perezoso";
+                string mensaje_reverso;
+                char[] mensaje_cadena = mensaje_original.ToCharArray();
 
-            foreach (string id in matriz_id)
-            {
-                if (id.StartsWith("B"))
+                //Hacemos que el mensaje nuevo se le haga un reverso
+                Array.Reverse(mensaje_cadena);
+                mensaje_reverso = new String(mensaje_cadena);
+
+                //Contamos las veces que aparece la letra
+                foreach (char letra in mensaje_cadena)
                 {
-                    Console.WriteLine(id);
+                    if (letra == 'o')
+                    {
+                        contador++;
+                    }
                 }
-            }
+
+                Console.WriteLine("Mensaje original: " + mensaje_original);
+                Console.WriteLine("Mensaje reverso: " + mensaje_reverso);
+                Console.WriteLine($"La letra 'o' aparece {contador} veces.");
 
             /**
              * Test
              * 
-             * 1. ¿Cómo se accede al tercer elemento de una matriz?
-             * myArray[2]
+             * 1. ¿Cuál de los siguientes nombres de variable es un buen nombre de variable?
+             * initialMessage
              * 
-             * 2. ¿Cuál de las siguientes respuestas es la forma correcta de crear una nueva matriz de números enteros con tres elementos?
-             * int[] myArray = new int[3];
+             * 2. ¿Cuál de las siguientes es una mala razón para usar un comentario de código?
+             * Quiere explicar cómo funciona una nueva palabra clave de C#.
              * 
-             * 3. ¿Cuál de las siguientes instrucciones foreach es la correcta?
-             * foreach (int value in values)
+             * 3. ¿Cuál de las siguientes afirmaciones sobre los espacios en blanco es verdadera?
+             * Debe agregar espacios en blanco prudentemente para mejorar la legibilidad del código.
              * 
              */
         }
