@@ -40,3 +40,8 @@
 > Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-arrays/
 
 > Commit: https://github.com/BannStrider/Semana_1/commit/a26082240612b614004e343624beb8aab60eb9db
+
+### **8.- Creación de código legible con convenciones, espacios en blanco y comentarios en C#**
+> Enlace: https://docs.microsoft.com/es-es/learn/modules/csharp-readable-code/
+
+> Commit: https://github.com/BannStrider/Semana_1/commit/e4f2cbb6b47465eaebf17dd58458b11fbab5881a
